@@ -8,7 +8,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 echo -e "${GREEN}╔════════════════════════════════════════╗${NC}"
-echo -e "${GREEN}║     SMTP Tool for Kali Linux          ║${NC}"
+echo -e "${GREEN}║      SMTP Tool for Kali Linux          ║${NC}"
 echo -e "${GREEN}╚════════════════════════════════════════╝${NC}"
 
 # Set Wine prefix
