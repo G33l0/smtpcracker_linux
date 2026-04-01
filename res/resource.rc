@@ -1,0 +1,190 @@
+#include <windows.h>
+#include "../include/resource.h"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     1,1,0
+ PRODUCTVERSION  1,1,0
+ FILEFLAGSMASK   0x3fL
+#ifdef _DEBUG
+ FILEFLAGS       0x1L
+#else
+ FILEFLAGS       0x0L
+#endif
+ FILEOS          VOS__WINDOWS32
+ FILETYPE        VFT_APP
+ FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName",      "SHKA\0"
+            VALUE "FileDescription",  "Smtp Cracker v1.1.0\0"
+            VALUE "FileVersion",      "1.1.0\0"
+            VALUE "InternalName",     "smtpcracker.exe\0"
+            VALUE "LegalCopyright",   "Copyright (C) 2026. All rights reserved.\0"
+            VALUE "OriginalFilename", "smtpcracker.exe\0"
+            VALUE "ProductName",      "Smtp Cracker\0"
+            VALUE "ProductVersion",   "1.1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+IDI_APP_ICON        ICON "assets/app.ico"
+IDI_ICON_HOME       ICON "assets/home.ico"
+IDI_ICON_SETTING    ICON "assets/setting.ico"
+IDI_ICON_ABOUT      ICON "assets/about.ico"
+STRINGTABLE
+BEGIN
+    IDS_MAIN_CLASS_NAME L"SMTPCRACKERCLASS"
+    IDS_SIDEBAR_HOME_TEXT       L"HOME"
+    IDS_SIDEBAR_SETTINGS_TEXT   L"Settings"
+    IDS_SIDEBAR_FOOTER_TEXT     L"  Smtp Cracker"
+    IDS_SIDEBAR_ABOUT_TEXT      L"About"
+    IDS_SETTINGS_GROUP_GENERAL      L"General Settings"
+    IDS_SETTINGS_LABEL_EMAIL        L"Test Email Settings"
+    IDS_SETTINGS_LABEL_TEST_EMAIL   L"Enter test email..."
+    IDS_SETTINGS_LABEL_THREAD       L"Thread Settings"
+    IDS_SETTINGS_LABEL_RETRY        L"Retry Settings"
+    IDS_SETTINGS_LABEL_SAVEFILE     L"Save File"
+
+    IDS_SETTINGS_GROUP_TELEGRAM     L"Telegram Integration"
+    IDS_SETTINGS_TELEGRAM_TOKEN_CUE L"Enter Telegram bot token..."
+    IDS_SETTINGS_TELEGRAM_CHAT_CUE  L"Enter Telegram chat ID..."
+
+    IDS_SETTINGS_GROUP_APPEARANCE   L"Appearance"
+    IDS_SETTINGS_THEME_MODE         L"Theme Mode:"
+    IDS_SETTINGS_COLOR_SCHEME       L"Color Scheme:"
+
+    IDS_SETTINGS_BTN_TEST_TELEGRAM  L"Test Telegram"
+    IDS_SETTINGS_BTN_SAVE           L"Save Settings"
+
+    IDS_SETTINGS_THREAD_PREVIEW_FMT L"Number of threads: %d"
+    IDS_SETTINGS_RETRY_PREVIEW_FMT  L"Max retries: %d"
+
+    IDS_THEME_MODE_DARK             L"Dark"
+    IDS_THEME_MODE_LIGHT            L"Light"
+    IDS_THEME_MODE_SYSTEM           L"System Default"
+    IDS_THEME_DARK_DEFAULT          L"Dark (Default)"
+    IDS_THEME_DARK_DRACULA          L"Dracula"
+    IDS_THEME_DARK_NORD             L"Nord"
+    IDS_THEME_DARK_SOLARIZED        L"Solarized Dark"
+    IDS_THEME_DARK_ONEDARKPRO       L"One Dark Pro"
+    IDS_THEME_DARK_GITHUB           L"GitHub Dark"
+    IDS_THEME_DARK_MATERIAL         L"Material Dark"
+    IDS_THEME_DARK_NIGHTOWL         L"Night Owl"
+    IDS_THEME_DARK_COBALT2          L"Cobalt2"
+    IDS_THEME_DARK_AYUMIRAGE        L"Ayu Mirage"
+    IDS_THEME_DARK_GRUVBOX          L"Gruvbox Dark"
+    IDS_THEME_DARK_SYNTHWAVE        L"SynthWave '84"
+    IDS_THEME_DARK_SHADESOFPURPLE   L"Shades of Purple"
+    IDS_THEME_DARK_TOKYONIGHT       L"Tokyo Night"
+    IDS_THEME_DARK_OCEANICNEXT      L"Oceanic Next"
+    IDS_THEME_DARK_CITYLIGHTS       L"City Lights"
+    IDS_THEME_DARK_KIMBIE           L"Kimbie Dark"
+    IDS_THEME_DARK_PANDA            L"Panda Dark"
+    IDS_THEME_DARK_MONOKAI          L"Monokai"
+    IDS_THEME_DARK_GRUVBOXMATERIAL  L"Gruvbox Material Dark"
+    IDS_THEME_DARK_ARC              L"Arc Dark"
+    IDS_THEME_DARK_OBSIDIAN         L"Obsidian"
+    IDS_THEME_DARK_DARCULA          L"Darcula"
+    IDS_THEME_DARK_FLAT             L"Flat Dark"
+    IDS_THEME_DARK_CHALLENGERDEEP   L"Challenger Deep"
+    IDS_THEME_DARK_CYBERPUNK        L"Cyberpunk"
+    IDS_THEME_DARK_MOONLIGHT        L"Moonlight"
+    IDS_THEME_DARK_OMNI             L"Omni"
+    IDS_THEME_DARK_SPACEGRAY        L"Spacegray"
+    // ------------------ Extra (dark) ------------------
+    IDS_THEME_DARK_MIDNIGHT        "Midnight"
+    IDS_THEME_DARK_FOREST          "Forest"
+    IDS_THEME_DARK_BLOODMOON       "Blood Moon"
+    IDS_THEME_DARK_AURORA          "Aurora"
+    IDS_THEME_DARK_STEALTH         "Stealth"
+    IDS_THEME_DARK_DEEPPURPLE      "Deep Purple"
+    IDS_THEME_DARK_DESERT          "Desert"
+    IDS_THEME_DARK_DEEPSEA         "Deep Sea"
+    IDS_THEME_DARK_SLATE           "Slate"
+    IDS_THEME_DARK_SHADOW          "Shadow"
+
+    // ------------------ Hacking (dark) ------------------
+    IDS_THEME_DARK_HACKER_TERMINAL "Hacker Terminal"
+    IDS_THEME_DARK_MATRIX          "Matrix"
+    IDS_THEME_DARK_NEONCORE        "NeonCore"
+    IDS_THEME_DARK_RETROTERMINAL   "Retro Terminal"
+    IDS_THEME_DARK_ICEHACK         "IceHack"
+
+
+
+    IDS_THEME_LIGHT_SOLARIZED       L"Solarized Light"
+    IDS_THEME_LIGHT_GITHUB          L"GitHub Light"
+    IDS_THEME_LIGHT_VS              L"Visual Studio Light"
+    IDS_THEME_LIGHT_ONE             L"One Light"
+    IDS_THEME_LIGHT_AYU             L"Ayu Light"
+    IDS_THEME_LIGHT_GRUVBOX         L"Gruvbox Light"
+    IDS_THEME_LIGHT_NORD            L"Nord Light"
+    IDS_THEME_LIGHT_DRACULASOFT     L"Dracula Soft"
+    IDS_THEME_LIGHT_MATERIAL        L"Material Light"
+    IDS_THEME_LIGHT_PAPERCOLOR      L"PaperColor Light"
+    IDS_THEME_LIGHT_ATOM            L"Atom Light"
+    IDS_THEME_LIGHT_CITYLIGHTS      L"City Lights Light"
+    IDS_THEME_LIGHT_VSCODEMODERN    L"VSCode Light Modern"
+    IDS_THEME_LIGHT_TOMORROW        L"Tomorrow Light"
+    IDS_THEME_LIGHT_PANDA           L"Panda Light"
+    IDS_THEME_LIGHT_ESPRESSO        L"Espresso Light"
+    IDS_THEME_LIGHT_MONOKAI         L"Monokai Light"
+    IDS_THEME_LIGHT_HIGHCONTRAST    L"High Contrast Light"
+    IDS_THEME_LIGHT_FLATWHITE       L"Flat White"
+    IDS_THEME_LIGHT_CLASSIC         L"Classic Light"
+    IDS_THEME_LIGHT_TOMORROWBRIGHT  L"Tomorrow Light Bright"
+    IDS_THEME_LIGHT_SOLARIZEDHIGH   L"Solarized Light High Contrast"
+    IDS_THEME_LIGHT_QUIET           L"Quiet Light"
+    IDS_THEME_LIGHT_ATOMONESOFT     L"Atom One Light Soft"
+    IDS_THEME_LIGHT_PAPER           L"Paper Light"
+    IDS_THEME_LIGHT_CLASSICMAC      L"Classic Mac Light"
+    IDS_THEME_LIGHT_MINIMAL         L"Minimal Light"
+    IDS_THEME_LIGHT_FROST           L"Frost Light"
+    IDS_THEME_LIGHT_CREAM           L"Cream Light"
+    IDS_THEME_LIGHT_SANDSTORM       L"Sandstorm Light"
+    // ------------------ Extra (light) ------------------
+    IDS_THEME_LIGHT_MINT           "Mint"
+    IDS_THEME_LIGHT_PEACH          "Peach"
+    IDS_THEME_LIGHT_LAVENDER       "Lavender"
+    IDS_THEME_LIGHT_SAND           "Sand"
+    IDS_THEME_LIGHT_ICE            "Ice"
+    IDS_THEME_LIGHT_MEADOW         "Meadow"
+    IDS_THEME_LIGHT_CORAL          "Coral"
+    IDS_THEME_LIGHT_SPRING         "Spring"
+    IDS_THEME_LIGHT_SKY            "Sky"
+    IDS_THEME_LIGHT_CHOCOLATE      "Chocolate"
+
+    // ------------------ Hacking (light) ------------------
+    IDS_THEME_LIGHT_HACKER_TERMINAL "Hacker Terminal (Light)"
+    IDS_THEME_LIGHT_MATRIX          "Matrix (Light)"
+    IDS_THEME_LIGHT_NEONCORE        "NeonCore (Light)"
+    IDS_THEME_LIGHT_RETROTERMINAL   "Retro Terminal (Light)"
+    IDS_THEME_LIGHT_ICEHACK         "IceHack (Light)"
+// Home Page Strings
+    IDS_HOME_BTN_UPLOAD      L"Upload Combo"
+    IDS_HOME_BTN_START       L"Start Checking"
+    
+    IDS_HOME_LBL_COMBOS      L"Combos Loaded: 0"
+    IDS_HOME_LBL_VALID       L"Valid SMTPs: 0"
+    IDS_HOME_LBL_FAILED      L"Failed: 0"
+    IDS_HOME_LBL_DELIVERY    L"Delivery Failed: 0"
+
+    IDS_HOME_COL_HOST        L"SMTP Host"
+    IDS_HOME_COL_EMAIL       L"Email"
+    IDS_HOME_COL_PORT        L"Port"
+    IDS_HOME_COL_PASS        L"Password"
+    IDS_HOME_COL_STATUS      L"Status"
+    IDS_HOME_COL_DELIVERY    L"Delivery"
+    
+    IDS_HOME_CONSOLE_INIT    L" \r\n SMTP Cracker Dashboard Ready!\r\n Upload a combo file to get started..."
+
+END
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res/resource.manifest"
